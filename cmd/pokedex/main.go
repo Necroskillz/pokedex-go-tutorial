@@ -59,10 +59,10 @@ func registerCommands() map[string]command.Command {
 			Description: "View information about a Pokemon you have caught",
 			Handler:     command.NewInspectCommand(pokedex),
 		},
-		"pokedex": {
-			Name:        "pokedex",
+		"list": {
+			Name:        "list",
 			Description: "List all Pokemon you have caught",
-			Handler:     command.NewPokedexCommand(pokedex),
+			Handler:     command.NewListCommand(pokedex),
 		},
 	}
 	return commands
@@ -87,7 +87,7 @@ func main() {
 			readline.PcItem("explore"),
 			readline.PcItem("catch"),
 			readline.PcItem("inspect"),
-			readline.PcItem("pokedex"),
+			readline.PcItem("list"),
 		),
 		EOFPrompt: "exit",
 	})
