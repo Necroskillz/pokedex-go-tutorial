@@ -1,0 +1,12 @@
+{
+    "project": {
+        "name": "pokedex",
+        "description": "A CLI tool to fetch and display information about Pokémon from the PokéAPI.",
+        "language": "go",
+        "baseImportPath": "github.com/necroskillz/pokedex",
+        "structure": {
+            "internal": "Internal modules",
+            "cmd": "Entry points"
+        }
+    }
+}
